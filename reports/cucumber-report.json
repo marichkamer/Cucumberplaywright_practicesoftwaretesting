@@ -1,0 +1,477 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "checkout-feature;logged-in-user-completes-a-purchase",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Logged-in user completes a purchase",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1380648696
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the homepage",
+            "match": {
+              "location": "steps/common.steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 520959578
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user is logged in",
+            "match": {
+              "location": "steps/checkout.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3822114019
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user adds \"Pliers\" to the basket",
+            "match": {
+              "location": "steps/checkout.steps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1928941410
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the user proceeds to checkout",
+            "match": {
+              "location": "steps/checkout.steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 180482707
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the user enters valid shipping and payment details",
+            "match": {
+              "location": "steps/checkout.steps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1894467654
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the order should be successfully placed",
+            "match": {
+              "location": "steps/checkout.steps.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 878246500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 253276223
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "checkout-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Checkout feature",
+    "tags": [],
+    "uri": "features/checkout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "languagechange-feature;user-changes-site-language-successfully",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "User changes site language successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1318700697
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the homepage",
+            "match": {
+              "location": "steps/common.steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 524146172
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the language switcher is visible",
+            "match": {
+              "location": "steps/languageChange.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72516531
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user selects \"de\" from the language dropdown",
+            "match": {
+              "location": "steps/languageChange.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2370735275
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the site interface should be displayed in \"de\"",
+            "match": {
+              "location": "steps/languageChange.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 119110281
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 210690179
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "languagechange-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "LanguageChange feature",
+    "tags": [],
+    "uri": "features/languageChange.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-feature;user-signs-in-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "User signs in with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1297671747
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "steps/login.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 541366339
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user enters a valid email and password",
+            "match": {
+              "location": "steps/login.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3896685953
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the \"My Account\" page should be visible",
+            "match": {
+              "location": "steps/login.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23234399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 240699853
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login feature",
+    "tags": [],
+    "uri": "features/login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "productsearch-feature;user-searches-for-an-exact-product-name",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "User searches for an exact product name",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1298416844
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the homepage",
+            "match": {
+              "location": "steps/common.steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 489952033
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user searches for \"Sledgehammer\"",
+            "match": {
+              "location": "steps/productSearch.steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2479613197
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the search results should contain \"Sledgehammer\"",
+            "match": {
+              "location": "steps/productSearch.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23364833
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 213212837
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "productsearch-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "ProductSearch feature",
+    "tags": [],
+    "uri": "features/productSearch.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "registration-feature;user-signs-up-with-valid-data",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "User signs up with valid data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1318786264
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "steps/login.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 501927661
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the \"Sign in\" button is visible",
+            "match": {
+              "location": "steps/registration.steps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2180789355
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user registers with valid data",
+            "match": {
+              "location": "steps/registration.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1187967349
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the account should be created successfully",
+            "match": {
+              "location": "steps/registration.steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 875869374
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 197732714
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "registration-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Registration feature",
+    "tags": [],
+    "uri": "features/registration.feature"
+  }
+]

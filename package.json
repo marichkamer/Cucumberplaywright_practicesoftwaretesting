@@ -1,0 +1,26 @@
+{
+  "name": "playwright-cucumber",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "bdd": "cucumber-js",
+    "bdd:smoke": "cucumber-js --tags @smoke",
+    "bdd:regression": "cucumber-js --tags @regression",
+    "report": "node scripts/report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.8.1",
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.3.0",
+    "multiple-cucumber-html-reporter": "^3.10.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "playwright": "^1.58.2"
+  }
+}
